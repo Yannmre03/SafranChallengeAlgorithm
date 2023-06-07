@@ -76,7 +76,7 @@ constraint6 = {'type': 'ineq', 'fun': lambda x: x[3] - epsilon_min}
 constraint7 = {'type': 'ineq', 'fun': lambda x: epsilon_max - x[3]}
 
 # Define initial guess for wing geometry parameters
-# The initial guess can be based on existing designs or random values
+# The initial guess is be based random values
 
 x0 = (pi/8,25,2,0.05)
 
