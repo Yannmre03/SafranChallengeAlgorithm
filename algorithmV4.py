@@ -1,14 +1,14 @@
 import math
 # Define inputs
 pi = math.pi
-V = 900 / 3.6 # Convert km/h to m/s
-h = 34000 * 0.3048 # Convert feet to meters
-rho = 0.4 # Air density at altitude in kg/m^3
-alpha = 5 * pi / 180 # Convert degrees to radians
-W = 50000 # Weight of the aircraft in N
-S = 100 # Wing area in m^2
+V = float(input("speed of the aircraft in km/h")) / 3.6 #speed of the aircraft
+h = float(input("altitude of the aircraft in meters")) #altitude
+rho = 0.4 # Air density at altitude in kg/m^3/ would be picked up by a sensor
+alpha = float(input("angle of attack of the aircraft in degres")) * pi / 180 #angle of attack of the aircraft
+W = 50000 # Weight of the aircraft in N/ specific to the aircraft
+S = 100 # Wing area in m^2/ specific to the aircraft
 q = 0.5 * rho * V**2 # Dynamic pressure in Pa
-T= 224.15 # temperature at 34000 feet
+T= 224.15 # temperature at 10 300 m as an example, would be picked up by a sensor
 
 # Define objective function
 # Minimize drag coefficient CD
